@@ -1,0 +1,228 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background: lightblue url(../img/bg.jpg) center/cover no-repeat fixed;
+}
+h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  height: calc(100% - 90px);
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.2s, transform 0.15s;
+  z-index: 1;
+  transform: scale(1);
+}
+
+.hidden,
+.refreshAnimation {
+  opacity: 0;
+  z-index: -1;
+}
+
+.hidden {
+  transform: scale(0.5);
+}
+
+.refreshAnimation {
+  transform: scale(0.7);
+}
+
+.value {
+  font-weight: 700;
+}
+
+.unit {
+  font-weight: 300;
+  font-size: 90%;
+  opacity: 0.8;
+}
+
+#widget {
+  background: rgb(5,139,171);
+  background: linear-gradient(145deg, rgba(191,68,0,1) 0%, rgba(9,9,121,1) 45%, rgba(79,112,7,1) 100%);
+  -webkit-box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.71);
+  box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.71);
+  color: white;
+  border: solid 3px black;
+  border-radius: 22px;
+  width: 400px;
+  height: 600px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  box-sizing: border-box;
+}
+
+.border {
+  border: solid 2px white;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header {
+  height: 70px;
+  background: rgb(222,242,255);
+  background: linear-gradient(100deg, rgba(222,242,255,0.2) 0%, rgba(222,242,255,0) 100%);
+}
+
+.city {
+  font-size: 150%;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+}
+
+.first {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.description {
+  text-align: center;
+  font-size: 110%;
+  display: inline;
+  padding: 10px;
+  border-bottom: solid 2px rgba(255,255,255,0.8);
+  font-weight: 300;
+}
+
+.temp {
+  text-align: center;
+  margin: 50px 0 30px 0;
+}
+
+.temp .value {
+  font-size: 400%;
+  line-height: 80%;
+  margin: 0 10px 0 30px;
+}
+
+.temp .value.minus {
+  margin-left: 10px;
+}
+
+.temp .unit {
+  vertical-align: top;
+}
+
+.third {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.fourth .block {
+  margin: 5px;
+  padding: 10px;
+  background: rgb(222,242,255);
+  background: linear-gradient(100deg, rgba(222,242,255,0.2) 0%, rgba(222,242,255,0) 100%);
+  border-radius: 4px;
+  display: inline-block;
+  width: calc(50% - 15px);
+  box-sizing: border-box;
+}
+
+.fourth .block:first-child {
+  margin-left: 10px;
+}
+
+.fourth .block:last-child {
+  margin-right: 10px;
+}
+
+.fourth .name {
+  font-weight: 300;
+  font-size: 110%;
+}
+
+.fourth .value {
+  font-size: 170%;
+}
+
+.fourth .unit {
+  margin-left: 10px;
+}
+
+.atmo-title {
+  font-size: 110%;
+  text-align: center;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+.atmo-content {
+  text-align: center;
+}
+
+.atmo-list.columns {
+  column-count: 2;
+}
+
+.atmo-list .name {
+  font-weight: 300;
+  font-size: 110%;
+}
+
+.atmo-list .value {
+  font-size: 120%;
+  margin: 0 10px 0 15px;
+}
+
+.cities-list {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.city-element {
+  padding: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 150%;
+}
+
+.city-element:hover {
+  background: rgb(222,242,255);
+  background: linear-gradient(100deg, rgba(222,242,255,0.2) 0%, rgba(222,242,255,0) 100%);
+}
+
+.city-name {
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer a {
+  margin: 0 15px;
+  color: black;
+  opacity: 0.5;
+  font-size: 90%;
+}
+
+.footer a:hover {
+  opacity: 1;
+}
