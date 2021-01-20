@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>ITpweather - @yield('title')</title>
+        <title>ITpweather @hasSection('title') - @yield('title') @endif</title>
         <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="preconnect" href="https://fonts.gstatic.com">
