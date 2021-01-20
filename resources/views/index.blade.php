@@ -136,7 +136,7 @@
     </div>
     <div class="footer">
       <a href="javascript:void(0)" @click="refresh" class="left">odśwież</a>
-      <a href="http://itpweather.test/login" class="right">zaloguj</a>
+      <a href="http://itpweatherv2.test/login" class="right">zaloguj</a>
     </div>
   </div>
 
