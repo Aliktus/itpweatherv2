@@ -136,7 +136,12 @@
     </div>
     <div class="footer">
       <a href="javascript:void(0)" @click="refresh" class="left">odśwież</a>
-      <a href="http://itpweatherv2.test/login" class="right">zaloguj</a>
+      @guest
+        <a href="http://itpweatherv2.test/login" class="right">zaloguj</a>
+      @endguest
+      @auth
+        <a href="http://itpweatherv2.test/login" class="right">edytuj</a>
+      @endauth
     </div>
   </div>
 
